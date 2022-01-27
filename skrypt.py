@@ -1,5 +1,4 @@
-#path = r'E:\SIT-temat1\dane.txt'   # scieżka z pliem z danymi
-# path = r'/mnt/d/Projects/Kinga/skrypt/dane.txt'
+# funkcja dot. dat, importowanie z moduły zewnętrznego
 # funkcja dot. dat, importowanie z moduły zewnętrznego
 from datetime import date
 
