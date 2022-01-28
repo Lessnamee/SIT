@@ -60,9 +60,7 @@ def pole(punkty):
     brakuje poprawki ze względu na odwzorowanie kartograficzne
     samoedzielnie!!!
     '''
-    '''
-    Dodac ta cholerna poprawke! xD 
-    '''
+   
     for item in punkty:
         item['X'] = float(item['X'])
         item['Y'] = float(item['Y'])
@@ -106,10 +104,7 @@ def zamienPktwXML(punkt,szablon):
     punktXML = punktXML.replace('----3-----',trojka)
 
     drugaTrojka = str(date.today())+'T00-00-00'
-    '''
-    Na poczatku tu bylo ----3---, ale to chyba blad, bo to powinna byc chyba inna wartosc, 
-    wiec zostalo to zastopiane 3v2 - tak samo w pliku punktuGraniczego.xml
-    '''
+    
     punktXML = punktXML.replace('----3v2-----',drugaTrojka)
 
     czworka = str(date.today())+'T00-00-00'
@@ -235,6 +230,3 @@ xmlListaDzialek = stworzListeDzialekXML(nrDzialek, listaPunktow, szablonDzEwid)
 wersjaKoncowa = zlaczDzialkiEwidIPunkty(xmlListaDzialek, xmlListaPuntkow)
 
 exportXML(r'daneXML.gml', wersjaKoncowa)
-'''
-Powodzenia, Mordy! XD 
-'''
